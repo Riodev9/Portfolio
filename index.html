@@ -10,35 +10,37 @@
 
   <!-- Navbar -->
    <!-- menu desktop -->
-<nav class="bg-white shadow-md fixed w-full z-10">
-  <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-    
-    <h1 class="text-xl font-bold">Portfolio</h1>
+    <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+        
+        <h1 class="text-xl font-bold">Portfolio</h1>
 
-    <!-- Desktop Menu -->
-    <div class="space-x-4 hidden md:block">
-      <a href="#about" class="hover:text-blue-500">About</a>
-      <a href="#projects" class="hover:text-blue-500">Projects</a>
-      <a href="#contact" class="hover:text-blue-500">Contact</a>
+        <!-- Desktop Menu -->
+        <div class="space-x-4 hidden md:block">
+        <a href="#about" class="hover:text-blue-500">About</a>
+        <a href="#projects" class="hover:text-blue-500">Projects</a>
+        <a href="#arts" class="hover:text-blue-500">Arts</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+        </div>
+
+        <!-- Mobile Button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        </button>
+
     </div>
 
-    <!-- Mobile Button -->
-    <button id="menu-btn" class="md:hidden focus:outline-none">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-              d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="menu" class="hidden md:hidden px-4 pb-4 bg-white">
-    <a href="#about" class="block py-2 border-b">About</a>
-    <a href="#projects" class="block py-2 border-b">Projects</a>
-    <a href="#contact" class="block py-2">Contact</a>
-  </div>
-</nav>
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden px-4 pb-4 bg-white">
+        <a href="#about" class="block py-2 border-b">About</a>
+        <a href="#projects" class="block py-2 border-b">Projects</a>
+        <a href="#Arts" class="block py-2">Arts</a>
+        <a href="#contact" class="block py-2">Contact</a>
+    </div>
+    </nav>
     <script>
         const btn = document.getElementById('menu-btn');
         const menu = document.getElementById('menu');
@@ -49,48 +51,88 @@
     </script>
 
   <!-- Hero -->
-<section class="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
-  <!-- Background Gradient -->
-  <div class="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-600 opacity-90"></div>
+    <section class="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
+        <!-- Background Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-600 opacity-90"></div>
 
-  <!-- Blur Effect -->
-  <div class="absolute w-72 h-72 bg-white/20 rounded-full blur-3xl top-10 left-10"></div>
-  <div class="absolute w-72 h-72 bg-white/20 rounded-full blur-3xl bottom-10 right-10"></div>
+        <!-- Blur Effect -->
+        <div class="absolute w-72 h-72 bg-white/20 rounded-full blur-3xl top-10 left-10"></div>
+        <div class="absolute w-72 h-72 bg-white/20 rounded-full blur-3xl bottom-10 right-10"></div>
 
-  <!-- Content -->
-  <div class="relative text-center text-white max-w-2xl">
-    
-    <!-- Foto -->
-    <img src="satrio.jpeg" 
-         alt="profile"
-         class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full border-4 border-white shadow-lg mb-4 object-cover">
+        <!-- Content -->
+        <div class="relative text-center text-white max-w-2xl">
+            
+            <!-- Foto -->
+            <img src="satrio.jpeg" 
+                alt="profile"
+                class="w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 mx-auto rounded-full border-4 border-white shadow-xl mb-6 object-cover">
 
-    <h2 class="text-3xl md:text-5xl font-bold mb-4">
-      Hi, I'm Satrio
-    </h2>
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">
+            Hi, I'm Satrio
+            </h2>
 
-    <p class="mb-6 text-white/90">
-    Data Enthusiast | Computer Science | Web Programmer
-    </p>
+            <p class="mb-6 text-white/90">
+            Data Enthusiast | Computer Science | Web Programmer
+            </p>
 
-    <a href="#projects"
-       class="bg-white text-slate-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">
-      View Projects
-    </a>
+            <a href="#projects"
+            class="bg-white text-slate-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">
+            View Projects
+            </a>
 
-  </div>
-</section>
+        </div>
+    </section>
 
   <!-- About -->
-  <section id="about" class="py-16 bg-white">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-      <h3 class="text-2xl font-bold mb-4">About Me</h3>
-      <p class="text-gray-600">
-        I have experience building web applications such as POS systems, student admission systems, 
-        and deep learning-based plant disease detection.
-      </p>
-    </div>
-  </section>
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+            
+            <!-- Kolase Foto -->
+            <!-- Kolase Foto -->
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 h-[500px]">
+                <!-- Besar -->
+                <img src="kolase/kolase1.jpeg"
+                    class="col-span-1 row-span-2 w-full h-full object-cover rounded-2xl shadow-lg">
+
+                <!-- Atas kanan -->
+                <img src="kolase/kolase2.png"
+                    class="w-full h-full object-cover rounded-2xl shadow-lg">
+
+                <!-- Bawah kanan -->
+                <img src="kolase/kolase4.png"
+                    class="w-full h-full object-cover rounded-2xl shadow-lg">
+            </div>
+            <!-- Story -->
+            <div>
+                <h3 class="text-3xl font-bold mb-4">About Me</h3>
+
+                <p class="text-gray-600 mb-4 leading-relaxed text-justify">
+                    Perkenalkan, Saya Muhammad Satrio Mododahi, seorang yang suka ngulik tentang IT, 
+                    Perjalanan saya di dunia IT dimulai sejak masa Sekolah Menengah Kejuruan dan perkuliahan, 
+                    ketika saya mulai mendalami pengembangan sistem dan pengolahan data sebagai landasan informasi untuk pengambilan keputusan,
+                    di situ saya menyadari seberapa penting sebuah data.
+                </p>
+
+                <p class="text-gray-600 mb-4 leading-relaxed text-justify">
+                    Selama berproses, saya telah mengembangkan beberapa proyek nyata seperti sistem Point of Sale (POS), 
+                    sistem penerimaan siswa baru, serta model deep learning untuk deteksi penyakit tanaman cabai. 
+                    Pengalaman ini membentuk saya menjadi seorang programmer junior yang tidak hanya fokus pada coding, 
+                    tetapi juga pada pemahaman alur sistem, kebutuhan pengguna, dan pengolahan data dengan efektif dan efisien.
+                </p>
+
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    Saya dikenal sebagai problem solver yang ulet, terbiasa menghadapi tantangan teknis, 
+                    serta memiliki minat untuk berkarier di bidang yang berkaitan dengan data, pengembangan web, 
+                    maupun sistem informasi, administrator, dan data analyst.
+                </p>
+            </div>
+
+            </div>
+
+        </div>
+    </section>
 
   <!-- Projects -->
   <section id="projects" class="py-16">
@@ -99,50 +141,164 @@
       <div class="grid md:grid-cols-3 gap-6">
         
         <!-- Card 1 -->
-        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-            <img src="pos.jpg" alt="POS System" class="w-full h-40 object-cover">
+        <div class="bg-grey-200 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+            <a href="project/pos hay.png" target="_blank">
+                <img src="project/pos hay.png" alt="POS System" class="w-full h-40 object-cover">
+            </a>
             <div class="p-5">
-                <h4 class="font-bold text-lg mb-2">POS System</h4>
+                <h4 class="font-bold text-lg mb-2">Point Of Sale System kafe Hay</h4>
                 <p class="text-gray-600 text-sm">
-                Web-based cashier system using Laravel & Tailwind.
+                Aplikasi point of sale 2 user (Admin, dan kasir), berbasis website, dengan menggunakan laravel framework, dan mysql sebagai database.
                 </p>
             </div>
         </div>
 
         <!-- Card 2 -->
         <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-            <img src="psb.jpg" alt="PSB System" class="w-full h-40 object-cover">
+            <a href="project/excel.png" target="_blank">
+                <img src="project/excel.png" alt="PSB System" class="w-full h-40 object-cover cursor-pointer">
+            </a>
             <div class="p-5">
-                <h4 class="font-bold text-lg mb-2">PSB System</h4>
+                <h4 class="font-bold text-lg mb-2">VSGA Operator Komputer Madya</h4>
                 <p class="text-gray-600 text-sm">
-                Student admission system with role-based dashboard.
+                Pelatihan operator komputer madya yang dilakukan oleh kominfo, untuk meningkatkan kualitas lulusan SMA/SMK khusunya di bidang operasional aplikasi perkantoran
                 </p>
             </div>
         </div>
 
         <!-- Card 3 -->
         <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-            <img src="cabai.jpg" alt="Chili Detection" class="w-full h-40 object-cover">
+            <a href="project/cabai.png" target="_blank">
+                <img src="project/cabai.png" alt="Chili Detection" class="w-full h-40 object-cover">
+            </a>
             <div class="p-5">
-                <h4 class="font-bold text-lg mb-2">Chili Disease Detection</h4>
+                <h4 class="font-bold text-lg mb-2">Aplikasi pendeteksi penyakit tanaman cabai</h4>
                 <p class="text-gray-600 text-sm">
-                Deep learning model using EfficientNetV2.
+                Aplikasi pendeteksi penyakit tanaman cabai menggunakan algoritma deep learning(AI) arsitektur efficientnetv2, berdasarkan data gambar daun cabai dan buah cabai
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-grey-200 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+            <a href="project/spkpmm.png" target="_blank">
+                <img src="project/spkpmm.png" alt="POS System" class="w-full h-40 object-cover">
+            </a>
+            <div class="p-5">
+                <h4 class="font-bold text-lg mb-2">SPK penentuan mahasiswa yang layak mengikuti PMM</h4>
+                <p class="text-gray-600 text-sm">
+                SPK (Sistem Pendukung Keputusan) penentuan mahasiswa yang layak mengikuti PMM, dengan menggunakan algoritma ARAS(Additive Ratio Assesment) berbasis web, dibuat menggunakan bahasa pemrograman PHP dan mysql sebagai database
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
+            <a href="project/psb.png" target="_blank">
+                <img src="project/psb.png" alt="PSB System" class="w-full h-40 object-cover cursor-pointer">
+            </a>
+            <div class="p-5">
+                <h4 class="font-bold text-lg mb-2">Sistem PSB (Penerimaan Siswa Baru)</h4>
+                <p class="text-gray-600 text-sm">
+                Aplikasi Sistem Penerimaan Siswa Baru berbasis website, menggunakan framework laravel dan mysql, dibuat dengan 2 role user yaitu calon siswa dan admin, yang mana calon siswa dapat mendaftar melalui aplikasi yang dibuat, dan admin dapat menyeleksi calon yang memenuhi kriteria atau tidak 
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
+            <a href="project/sistem_informasi hotel.png" target="_blank">
+                <img src="project/sistem_informasi hotel.png" alt="Chili Detection" class="w-full h-40 object-cover">
+            </a>
+            <div class="p-5">
+                <h4 class="font-bold text-lg mb-2">Aplikasi booking penginapan, manajemen inventaris dan rekap keuangan</h4>
+                <p class="text-gray-600 text-sm">
+                Aplikasi booking kamar penginapan, pendataan inventaris dan pengunjung, dan rekap pengeluaran dan keuntungan berbasis website, menggunakan php native, dan database mysql  
                 </p>
             </div>
         </div>
 
       </div>
     </div>
-  </section>
+</section>
 
+<section id="arts" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+    
+    <h3 class="text-2xl font-bold text-center mb-8">Gallery</h3>
+
+    <!-- Kolase -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 auto-rows-[150px]">
+
+    <!-- Portrait 1 -->
+    <a href="art/gambar3.png" target="_blank" class="row-span-2 overflow-hidden">
+        <img src="art/gambar3.png" 
+            class="w-full h-full object-cover hover:scale-105 transition duration-300">
+    </a>
+
+    <!-- Square 1 -->
+    <a href="art/gambar1.png" target="_blank" class="overflow-hidden">
+        <img src="art/gambar1.png" 
+            class="w-full h-full object-cover hover:scale-105 transition duration-300">
+    </a>
+
+    <!-- Square 2 -->
+    <a href="art/gambar2.png" target="_blank" class="overflow-hidden">
+        <img src="art/gambar2.png" 
+            class="w-full h-full object-cover hover:scale-105 transition duration-300">
+    </a>
+
+    <!-- Portrait 2 -->
+    <a href="art/gambar5.jpeg" target="_blank" class="row-span-2 overflow-hidden">
+        <img src="art/gambar5.jpeg" 
+            class="w-full h-full object-cover hover:scale-105 transition duration-300">
+    </a>
+
+</div>
+
+  </div>
+</section>
   <!-- Contact -->
-  <section id="contact" class="py-16 bg-white">
-    <div class="max-w-xl mx-auto px-4 text-center">
-      <h3 class="text-2xl font-bold mb-4">Contact</h3>
-      <p class="text-gray-600 mb-4">Email: your@email.com</p>
-      <button class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">Say Hello</button>
+<section id="contact" class="py-16 bg-white">
+  <div class="max-w-xl mx-auto px-4 text-center">
+    
+    <h3 class="text-2xl font-bold mb-6">Contact</h3>
+
+    <!-- Contact List -->
+    <div class="space-y-3 mb-6">
+
+      <!-- Email -->
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=msatriomododahi@gmail.com"
+         target="_blank"
+         class="block text-gray-600 hover:text-blue-500 transition">
+        Email : msatriomododahi@gmail.com
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/Riodev9" 
+         target="_blank"
+         class="block text-gray-600 hover:text-blue-500 transition">
+        Github : github.com/Riodev9
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/6281343722021" 
+         target="_blank"
+         class="block text-gray-600 hover:text-blue-500 transition">
+        WhatsApp : Chat via WhatsApp
+      </a>
+
     </div>
-  </section>
+
+    <!-- Hire Me Button -->
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=msatriomododahi@gmail.com"
+       target="_blank"
+       class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">
+      Hire Me
+    </a>
+
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="text-center py-6 text-sm text-gray-500">
